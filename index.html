@@ -6,16 +6,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <video loop muted autoplay>
+    <video loop muted autoplay style="max-width: 100%; height: auto; object-fit: fill; display: block; margin: auto;">
         <source src="https://firebasestorage.googleapis.com/v0/b/screens-ohooo.appspot.com/o/0He6o8ghSEkRT98Oy583%2Fshowreel_final3.mp4?alt=media&token=f7818ef4-feed-4242-93c8-d4fc65f988d8" type="video/mp4" />
     </video>
 
     <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         video {
             max-width: 100%;
             height: auto;
             display: block;
             margin: auto;
+            object-fit: fill;
         }
     </style>
 </body>
